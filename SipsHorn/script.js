@@ -1,4 +1,4 @@
-console.log("Sips Horn v0.0.9");
+
 
 function getParameterByName(name) {
     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
@@ -45,7 +45,7 @@ function filterTimeUpdate(e, callback){
  function checkSounds(video){
 	//if at the start
 	if(Math.floor(video.currentTime) == 0){
-		console.log('play horn');
+		//console.log('play horn');
 		playSound('foghorn', video, true);
 	}else if(Math.floor(video.duration) - Math.floor(video.currentTime)  == 10){ //10 seconds remaining
 		playSound('chiptune',video, false);
